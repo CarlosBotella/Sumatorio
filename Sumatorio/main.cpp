@@ -7,17 +7,15 @@
 
 /*
  ------------------------------------------------
- Datos de entrada: n : N
- Datos de salida: N
- Devolver (n·(n+1))/2
+unsigned int --> sumatorio --> unsigned int
  ------------------------------------------------
  */
 #include <iostream>
 using namespace std;
 // ----------------------------------------------
-unsigned sumatorio(unsigned n){
+unsigned int sumatorio(unsigned int n){
     unsigned int total = 0;
-    for (int numeroAsumar = 0; numeroAsumar <= n; numeroAsumar++) {
+    for (int numeroAsumar = 1; numeroAsumar <= n; numeroAsumar++) {
         total = total + numeroAsumar;
     }
     return total;
